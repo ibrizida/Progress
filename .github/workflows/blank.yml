@@ -34,3 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
+          pwd
+          ls -la
+          find . -maxdepth 3 -type d
+          pwsh -Command "Write-Host 'Alo Ivan!' vc estah na pasta: $env:GITHUB_WORKSPACE"
